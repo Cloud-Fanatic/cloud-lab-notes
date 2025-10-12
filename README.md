@@ -1,9 +1,9 @@
 # CloudLab: AWS, Terraform, Kubernetes & GitOps
 
-This repository documents and demonstrates my personal home lab for learning and showcasing **Cloud Engineering skills**, including:
+Hi, I'm Sean! This repository documents and demonstrates my personal home lab for learning and showcasing **Cloud Engineering skills**, including:
 
 - **AWS infrastructure provisioning** with Terraform
-- **Kubernetes cluster setup** (k3s)
+- **Kubernetes cluster setup** (k3s) on EC2
 - **GitOps workflow** using Flux
 - **Secrets Management** with Sealed Secrets
 
@@ -16,3 +16,4 @@ This repository documents and demonstrates my personal home lab for learning and
 5. [Chapter 5 - Deploying Additional Apps on k3s with Terraform](Chapter5-Terraform-Additional-App-on-K3s.md)
 6. [Chapter 6 - k3s Sealed Secrets Setup](Chapter6-K3s-Sealed-Secrets-Setup.md)
 7. [Chapter 7 - Applying Sealed Secrets in Pods & Services](Chapter7-Apply-Sealed-Secrets-in-Pods-Services.md)
+8. **[PLANNED]** Chapter 8 - CI/CD Pipeline depployment, config and integration
