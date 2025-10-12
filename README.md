@@ -16,4 +16,4 @@ Hi, I'm Sean! This repository documents and demonstrates my personal home lab fo
 5. [Chapter 5 - Deploying Additional Apps on k3s with Terraform](Chapter5-Terraform-Additional-App-on-K3s.md)
 6. [Chapter 6 - k3s Sealed Secrets Setup](Chapter6-K3s-Sealed-Secrets-Setup.md)
 7. [Chapter 7 - Applying Sealed Secrets in Pods & Services](Chapter7-Apply-Sealed-Secrets-in-Pods-Services.md)
-8. **[PLANNED]** Chapter 8 - CI/CD Pipeline depployment, config and integration
+8. **[PLANNED]** Chapter 8 - CI/CD Pipeline deployment, config and integration
