@@ -82,12 +82,11 @@ kubectl create secret generic aws-creds --from-literal=AWS_ACCESS_KEY_ID=your_ac
 ## Step 4 - Configure/ edit the `aws-creds.yaml` file
 It is important to that we add specific information to the `aws-creds.yaml` file that was just created in the previous step. 
 We add the `type: Opaque` and the `namespace: kube-system` parameters:
-![add parameters](images/10-4.png)
 ```
 apiVersion: v1
 data:
-  AWS_ACCESS_KEY_ID: QUtJQ<REDACTED>NjI=
-  AWS_SECRET_ACCESS_KEY: K2llbDEwbVFlM1<REDACTED>mFGWA==
+  AWS_ACCESS_KEY_ID: QUtJ<REDACTED>NjI=
+  AWS_SECRET_ACCESS_KEY: K2l<REDACTED>GWA==
 kind: Secret
 type: Opaque
 metadata:
