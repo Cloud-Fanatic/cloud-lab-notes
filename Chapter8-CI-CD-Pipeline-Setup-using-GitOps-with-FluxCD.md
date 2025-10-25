@@ -1,13 +1,13 @@
 # Chapter 8 — CI/CD Pipeline Setup — GitOps with Git Actions and FluxCD
 
-## Step 0 - Set up AWS ECR (Elastic Container Registry)
+## Step 1 - Set up AWS ECR (Elastic Container Registry)
 
 Create a new Container Registry in AWS ECR (Private Repo):
 
 ![ECR Set up in AWS](/images/12.jpg)
 
 
-## Step 1 — Set up GitHub Repository & GitOps Folder Structure
+## Step 2 — Set up GitHub Repository & GitOps Folder Structure
 
 I had already created the repo 'cloud-lab'.
 
@@ -29,7 +29,7 @@ cloud-lab/
 
 - Added # kustomize: name=image and # kustomize: tag=latest comments to enable FluxCD image updates.
 
-## Step 2 — GitHub Actions CI/CD Workflow
+## Step 3 — GitHub Actions CI/CD Workflow
 
 - Workflow trigger: push to VERSION.txt file.
 
@@ -51,7 +51,7 @@ cloud-lab/
 
 <img src="/images/13-2.jpg" alt="ECR variable name in manifest file" width="600" height="400">
 
-## Step 3 — FluxCD GitOps Setup
+## Step 4 — FluxCD GitOps Setup
 
 1.  ImageRepository
 
@@ -76,7 +76,7 @@ cloud-lab/
 
 - Outcome: GitHub Action builds an image every time VERSION.txt is updated.
 
-## Step 4 — Kubernetes Deployment Setup
+## Step 5 — Kubernetes Deployment Setup
 
 - deployment.yaml configured:
 - Container points to ECR image.
@@ -93,7 +93,7 @@ kubectl create secret docker-registry aws-ecr-credentials \
 ```
 - Ensured old pods were deleted so new pods pull the updated image.
 
-## Step 5 — Troubleshooting / Key Learning Points
+## Step 6 — Troubleshooting / Key Learning Points
 
 1.  Error “not found”: K3s couldn’t pull :latest because the image was tagged with a timestamp. Fix: GitHub Action now pushes latest in addition to timestamp.
 
@@ -103,7 +103,7 @@ kubectl create secret docker-registry aws-ecr-credentials \
 
 4.  FluxCD automation only works if Deployment contains # kustomize setters and matches ImageRepository.
 
-## Step 6 — Version visibility
+## Step 7 — Version visibility
 
 - Embedded version info in Docker image or tag based on VERSION.txt.
 
@@ -116,7 +116,7 @@ kubectl get pod <pod-name> -n default -o jsonpath='{.spec.containers[0].image}'
 kubectl exec -it <pod-name> -- cat /app/VERSION.txt
 ```
 
-## Step 7 — Final result
+## Step 8 — Final result
 
 Push to VERSION.txt → GitHub Action builds & pushes image → FluxCD detects → Deployment updated → K3s pod pulls new ECR image automatically.
 
