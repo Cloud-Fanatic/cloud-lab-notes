@@ -1,4 +1,4 @@
-# CI/CD Pipeline Setup — GitOps with Git Actions and FluxCD
+# Chapter 8 — CI/CD Pipeline Setup — GitOps with Git Actions and FluxCD
 
 ## Step 0 - Set up AWS ECR (Elastic Container Registry)
 
