@@ -8,19 +8,19 @@ It showcases an end-to-end, GitOps-driven CI/CD environment with automated infra
 
 ### Tech Stack Overview&nbsp;
 
-➡️ Infrastructure as Code (IaC) — Provisioned with Terraform on AWS (VPC, subnets, security groups, EC2, ECR)
+▶️ **Infrastructure as Code (IaC)** — Provisioned with Terraform on AWS (VPC, subnets, security groups, EC2, ECR).&nbsp;
 
-➡️ Kubernetes (k3s) — Lightweight production-grade cluster hosted on AWS EC2
+▶️ **Kubernetes (k3s)** — Lightweight production-grade cluster hosted on AWS EC2.&nbsp;
 
-➡️ GitOps Continuous Delivery — Managed with FluxCD, syncing cluster state directly from Git
+▶️ **GitOps Continuous Delivery** — Managed with FluxCD, syncing cluster state directly from Git.&nbsp;
 
-➡️ Continuous Integration (CI) — Implemented via GitHub Actions for automated builds, testing, image scanning, and deployments to Amazon ECR
+▶️ **Continuous Integration (CI)** — Implemented with GitHub Actions for builds, testing, scanning & ECR delivery.&nbsp;
 
-➡️ Secrets Management — Securely handled through Sealed Secrets and optional External Secrets Operator
+▶️ **Secrets Management** — Securely handled through Sealed Secrets and optional External Secrets Operator.&nbsp;
 
-➡️ Observability Stack — Includes Prometheus, Grafana, and Loki for metrics, dashboards, and log aggregation
+▶️ **Observability Stack** — Includes Prometheus, Grafana, and Loki for metrics, dashboards, and log aggregation.&nbsp;
 
-➡️ Security & Policy Enforcement — Enhanced with Kyverno and Trivy for compliance and vulnerability scanning<br>
+▶️ **Security & Policy Enforcement** — Enhanced with Kyverno and Trivy for compliance and vulnerability scanning.<br>&nbsp;
 
 <img src="images/cloud-lab-workflow.png" alt="CloudLab Workflow" width="600" height="400">&nbsp;
 
@@ -32,4 +32,4 @@ It showcases an end-to-end, GitOps-driven CI/CD environment with automated infra
 5. [Chapter 5 - Deploying Additional Apps on k3s with Terraform](Chapter5-Terraform-Additional-App-on-K3s.md)
 6. [Chapter 6 - k3s Sealed Secrets Setup](Chapter6-K3s-Sealed-Secrets-Setup.md)
 7. [Chapter 7 - Applying Sealed Secrets in Pods & Services](Chapter7-Apply-Sealed-Secrets-in-Pods-Services.md)
-8. **[PLANNED]** Chapter 8 - CI/CD Pipeline deployment, config and integration&nbsp;
+8. **[WIP]** Chapter 8 - CI/CD pipeline deployment with GitHub Actions, Flux, and application deployment integration&nbsp;
