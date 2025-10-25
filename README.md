@@ -22,7 +22,7 @@ It showcases an end-to-end, GitOps-driven CI/CD environment with automated infra
 
 ➡️ Security & Policy Enforcement — Enhanced with Kyverno and Trivy for compliance and vulnerability scanning<br>
 
-![CloudLab Workflow](images/cloud-lab-workflow.png)&nbsp;
+<img src="images/cloud-lab-workflow.png" alt="CloudLab Workflow" width="600" height="400">&nbsp;
 
 ### Table of Contents&nbsp;
 1. [Chapter 1 - Building the Foundation: AWS + Terraform](Chapter1-Building-the-Foundation-AWS-Terraform.md)
