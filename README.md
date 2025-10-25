@@ -32,4 +32,4 @@ It showcases an end-to-end, GitOps-driven CI/CD environment with automated infra
 5. [Chapter 5 - Deploying Additional Apps on k3s with Terraform](Chapter5-Terraform-Additional-App-on-K3s.md)
 6. [Chapter 6 - k3s Sealed Secrets Setup](Chapter6-K3s-Sealed-Secrets-Setup.md)
 7. [Chapter 7 - Applying Sealed Secrets in Pods & Services](Chapter7-Apply-Sealed-Secrets-in-Pods-Services.md)
-8. **[WIP]** Chapter 8 - CI/CD pipeline deployment with GitHub Actions, Flux, and application deployment integration&nbsp;
+8. [Chapter 8 - CI/CD Pipeline Setup — GitOps with Git Actions and FluxCD](Chapter8-CI-CD-Pipeline-Setup-using-GitOps-with-FluxCD.md)
